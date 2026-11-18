@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+# pandas — add back when Market Analyst module is built (needs Python 3.12 wheel)
+requests
+pytest

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>AI Dropshipping Agent</title>
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+<div id="app">
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <h1><span>🤖</span>AI Dropship</h1>
+      <div class="tagline">Dropshipping Intelligence Platform</div>
+    </div>
+    <div class="sidebar-status">
+      <span class="status-dot" id="status-dot"></span>
+      <span id="status-label" style="color:var(--text-sec)">Checking…</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#overview"    data-page="overview">    <span class="nav-icon">🏠</span>Overview</a></li>
+        <li><a href="#discovery"   data-page="discovery">   <span class="nav-icon">🔍</span>Product Discovery</a></li>
+        <li><a href="#research"    data-page="research">    <span class="nav-icon">📈</span>Product Research</a></li>
+        <li><a href="#suppliers"   data-page="suppliers">   <span class="nav-icon">🏭</span>Supplier Discovery</a></li>
+        <li><a href="#pricing"     data-page="pricing">     <span class="nav-icon">💰</span>Pricing & Profit</a></li>
+        <li><a href="#opportunity" data-page="opportunity"> <span class="nav-icon">🎯</span>Opportunity</a></li>
+        <li><a href="#content"     data-page="content">     <span class="nav-icon">✍️</span>Content Generator</a></li>
+        <li><a href="#marketing"   data-page="marketing">   <span class="nav-icon">📡</span>Marketing Intel</a></li>
+        <li><a href="#performance" data-page="performance"> <span class="nav-icon">📊</span>Performance</a></li>
+        <li><a href="#settings"    data-page="settings">    <span class="nav-icon">⚙️</span>Settings</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-footer">
+      <span style="font-size:.75rem;color:var(--text-dim)">v0.7.0</span>
+      <button class="theme-toggle" id="theme-label" onclick="toggleTheme()">☀️ Light</button>
+    </div>
+  </aside>
+
+  <!-- Sidebar overlay (mobile) -->
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- Main area -->
+  <div id="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px">
+        <button id="menu-btn" onclick="openSidebar()">☰</button>
+        <div>
+          <div id="page-title" style="font-weight:600">Overview</div>
+          <div id="page-breadcrumb" class="breadcrumb">Dashboard › Overview</div>
+        </div>
+      </div>
+    </div>
+    <div id="page-content"></div>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
